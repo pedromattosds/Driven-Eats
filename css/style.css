@@ -62,7 +62,7 @@ h2{
     overflow: auto;
 }
 
-.menu-pratos{
+.menu-pratos-principais, .menu-bebidas, .menu-sobremesas{
     margin-left: 3px;
     display: flex;
     width: 100%;
@@ -123,5 +123,15 @@ button{
 
 .prato div{
     display: flex;
-    border-right: 50px;
+}
+
+.check{
+    border: 5px solid #32B72F;
+    background: url("../imagens/vcheck.svg") no-repeat;
+    background-size: 20px;
+    background-position-y: 95%;
+    background-position-x: 95%;
+    background-color: white;
+    padding: 13px 9px 0px 9px;
+    
 }
