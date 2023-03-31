@@ -135,3 +135,77 @@ button{
     padding: 13px 9px 0px 9px;
     
 }
+
+.finalizar{
+    background-color: #32B72F;
+    z-index: 1;
+    position: fixed;
+}
+
+.escondido{
+    display: none;
+}
+
+.confirmacao{
+    background-color: #50D074;
+    width: 377px;
+    height: 353px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:8px;
+    padding: 10px 23px 0 23px;
+    z-index: 2;
+}
+
+.confirmacao h3{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 27px;
+    margin-bottom: 15px;
+}
+
+.confirmacao h5{
+    color: white;
+    line-height: 27px;
+}
+
+.confirmacao div{
+    display:flex;
+    justify-content: space-between;
+}
+
+.pode-pedir{
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:11px;
+    margin-bottom:15px;
+    
+}
+
+.pode-pedir h3{
+    color:#50D074;
+}
+
+.blur{
+    position:fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity:0.85;
+}
+
+.cancela{
+    cursor: pointer;
+}

@@ -29,4 +29,19 @@ function Check( container, seletor){
    valorTotal = valorPrincipal + valorBebida + valorSobremesa;
    console.log(valorTotal);
 
+   if (valorPrincipal !== 0 && valorBebida !==0 && valorSobremesa !==0 ){
+    document.querySelector('.finalizar').classList.remove('escondido');
+   }
 }
+
+function FinalizarPedido(){
+    document.querySelector('.confirmacao').classList.remove('escondido');
+    document.querySelector('.blur').classList.remove('escondido');
+
+    document.querySelector('.vprinc').innerHTML = String(Math.round(valorPrincipal*100)/100).replace('.',',');
+    document.querySelector('.vbeb').innerHTML = String(Math.round(valorBebida*100)/100).replace('.',',');
+    document.querySelector('.vsob').innerHTML = String(Math.round(valorSobremesa*100)/100).replace('.',',');
+    document.querySelector('.vtotal').innerHTML = String(Math.round(valorTotal*100)/100).replace('.',',');
+
+}
+
