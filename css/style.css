@@ -193,6 +193,8 @@ button{
 
 .pode-pedir h3{
     color:#50D074;
+    cursor: pointer;
+    margin-top: 14px;
 }
 
 .blur{
