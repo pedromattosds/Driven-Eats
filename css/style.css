@@ -56,16 +56,17 @@ h2{
 }
 
 .container-pratos{
- 
+
     padding-top: 27px;
     width:100%;
-    overflow: auto;
+
 }
 
 .menu-pratos-principais, .menu-bebidas, .menu-sobremesas{
     margin-left: 3px;
     display: flex;
     width: 100%;
+    overflow: auto;
     
 }
 

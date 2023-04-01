@@ -49,10 +49,10 @@ function FinalizarPedido(){
     document.querySelector('.confirmacao').classList.remove('escondido');
     document.querySelector('.blur').classList.remove('escondido');
 
-    document.querySelector('.vprinc').innerHTML = String(Math.round(valorPrincipal*100)/100).replace('.',',');
-    document.querySelector('.vbeb').innerHTML = String(Math.round(valorBebida*100)/100).replace('.',',');
-    document.querySelector('.vsob').innerHTML = String(Math.round(valorSobremesa*100)/100).replace('.',',');
-    document.querySelector('.vtotal').innerHTML = String(Math.round(valorTotal*100)/100).replace('.',',');
+    document.querySelector('.vprinc').innerHTML = String(valorPrincipal.toFixed(2).replace('.',','));
+    document.querySelector('.vbeb').innerHTML = String(valorBebida.toFixed(2).replace('.',','));
+    document.querySelector('.vsob').innerHTML = String(valorSobremesa.toFixed(2).replace('.',','));
+    document.querySelector('.vtotal').innerHTML = String(valorTotal.toFixed(2).replace('.',','));
     
     document.querySelector('.pprinc').innerHTML = varPratoprincipal.innerHTML;
     document.querySelector('.bprinc').innerHTML = varBebida.innerHTML;
@@ -65,7 +65,7 @@ function FinalizarPedido(){
 function Whatsapp(){
     let mensagem =encodeURIComponent("Olá, gostaria de fazer o pedido:\n- Prato: "+
     varPratoprincipal.innerHTML+"\n- Bebida: "+varBebida.innerHTML+"\n- Sobremesa: "+
-    varSobremesa.innerHTML+"\nTotal: R$ "+String(Math.round(valorTotal*100)/100).replace('.',','));
+    varSobremesa.innerHTML+"\nTotal: R$ "+String(valorTotal.toFixed(2).replace('.',',')));
     window.open("https://wa.me/5521985943327?text="+mensagem);
 }
 
