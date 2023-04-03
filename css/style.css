@@ -212,3 +212,15 @@ button{
 .cancela{
     cursor: pointer;
 }
+
+.menu-pratos-principais::-webkit-scrollbar {
+    display: none;
+  }
+
+.menu-bebidas::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-sobremesas::-webkit-scrollbar {
+    display: none;
+}
